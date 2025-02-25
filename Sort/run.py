@@ -12,4 +12,3 @@ for name in sort_list:
         p.wait()
         f.write(p.recvline().decode())
         p.close()
-        
