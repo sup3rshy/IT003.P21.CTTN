@@ -1,0 +1,55 @@
+merge_sort:
+112 ms
+130 ms
+227 ms
+234 ms
+220 ms
+233 ms
+225 ms
+238 ms
+227 ms
+323 ms
+quick_sort:
+33 ms
+34 ms
+174 ms
+156 ms
+160 ms
+158 ms
+155 ms
+157 ms
+167 ms
+194 ms
+heap_sort:
+277 ms
+262 ms
+479 ms
+656 ms
+616 ms
+641 ms
+638 ms
+521 ms
+505 ms
+648 ms
+clib_sort:
+68 ms
+67 ms
+161 ms
+163 ms
+157 ms
+160 ms
+158 ms
+164 ms
+166 ms
+156 ms
+numpy_sort.py:
+74 ms
+97 ms
+145 ms
+141 ms
+147 ms
+154 ms
+153 ms
+138 ms
+147 ms
+145 ms
