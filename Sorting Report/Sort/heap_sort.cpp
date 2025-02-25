@@ -25,7 +25,7 @@ void heapsort(int n) {
         heapify(n, i);
 
     for (int i = n - 1; i >= 0; i--) {
-        std::swap(arr[0], arr[i]);
+        swap(arr[0], arr[i]);
         heapify(i, 0);
     }
 }
