@@ -10,4 +10,4 @@ for numTest in range(10):
         arr = sort(arr)
     elif numTest == 1:
         arr = sort(arr)[::-1]
-    open(f'inp_{numTest + 1}.txt', "w").write(' '.join(str(x) for x in arr))
+    open(f'Testcase/inp_{numTest + 1}.txt', "w").write(' '.join(str(x) for x in arr))
