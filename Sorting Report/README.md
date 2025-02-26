@@ -1,3 +1,3 @@
 - Must run on linux
-- If you want to generate some test cases, just run Testcase/gentest.py. But it's very slow because i want to create some strong test cases 
+- If you want to generate some new test cases, just run Testcase/gentest.py. But it's very slow because i want to create some strong test cases 
 - If you want to measure the running time (in ms) of each sorting algorithm, just run ./run.py 
