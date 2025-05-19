@@ -1,0 +1,56 @@
+scanner.py
+========================= MalwareScannerApp Class =========================
+
+class MalwareScannerApp(builtins.object)
+ |  MalwareScannerApp(root)
+ |
+ |  A GUI application built with Tkinter and ttkbootstrap to scan files or folders
+ |  for malware using the VirusTotal API. Scan results are stored in an SQLite
+ |  database. Supports viewing scan history, exporting results to CSV, and opening
+ |  detailed VirusTotal reports in a web browser.
+ |
+ |  Attributes:
+ |      root (Tk): The main application window.
+ |      file_label (Label): Displays the selected file or folder name.
+ |      select_button (Button): Button to select a single file.
+ |      select_folder_button (Button): Button to select a folder recursively.
+ |      scan_button (Button): Button to start scanning.
+ |      export_button (Button): Button to export scan results to CSV.
+ |      progress (Progressbar): Shows scan progress.
+ |      result_text (Text): Area to display scan results.
+ |      history_button (Button): Button to open the scan history window.
+ |      targets (list): List of file paths to be scanned.
+ |
+ |  Methods:
+ |      __init__(self, root)
+ |          Initializes the GUI components and sets up the application.
+ |
+ |      select_file(self)
+ |          Opens a file dialog to select a single file, updates targets list.
+ |
+ |      select_folder(self)
+ |          Opens a folder dialog, recursively collects all files inside,
+ |          and updates targets list.
+ |
+ |      scan(self)
+ |          Scans all files in targets sequentially, updating progress and
+ |          saving results to database. Uses cached results if available.
+ |
+ |      export_to_csv(self)
+ |          Exports all scan records from the database into a CSV file.
+ |
+ |      show_history(self)
+ |          Opens a new window displaying scan history in a table view,
+ |          supports viewing detailed reports.
+ |
+ |      show_report_detail(self, sha256)
+ |          Shows the VirusTotal detailed report URL for the given SHA256 hash,
+ |          includes a button to open the report in a web browser.
+ |
+ |  Additionally, helper functions outside the class include:
+ |      init_db(): Initializes the SQLite database.
+ |      save_scan(...): Saves a scan record into the database.
+ |      get_all_scans(): Retrieves all scan records.
+ |      get_scan_by_sha256(sha256): Retrieves scan result by SHA256 hash.
+ |      hash_file(filepath): Calculates the SHA256 hash of a file.
+ |      scan_file(filepath): Uploads a file to VirusTotal and retrieves scan results.
