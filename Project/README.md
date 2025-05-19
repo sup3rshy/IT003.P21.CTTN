@@ -1,0 +1,1 @@
+- pip install -r requirements.txt to install all needed libraries 
